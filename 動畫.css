@@ -1,0 +1,134 @@
+.target-section {
+    opacity: 0; /* 初始設置為隱藏 */
+    transition: opacity 2s ease; /* 隱藏和顯示的過渡效果 */
+  }
+  
+  .target-section.show {
+    opacity: 1; /* 顯示的樣式 */
+  }
+
+  /* 關於我們文字 */
+/* -------------------------------------- */
+  .target-section1 {
+    opacity: 0; /* 初始設置為隱藏 */
+    transition: opacity 0.5s ease; /* 隱藏和顯示的過渡效果 */
+  }
+
+  /* 關於我們文字 */
+  .target-section1.rotate-in-center {
+    opacity: 1; /* 顯示的樣式 */
+
+    -webkit-animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  /* 旋轉logo */
+ @-webkit-keyframes rotate-in-center {
+  0% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    opacity: 1;
+  }
+}
+@keyframes rotate-in-center {
+  0% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+
+/* -------------------------------------- */
+
+
+/* -------------------------------------------------------- */
+
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* 動畫顫抖 */
+.vibrate-1:hover {
+  -webkit-animation: vibrate-1 0.3s linear infinite both;
+          animation: vibrate-1 0.3s linear infinite both;
+} 
+
+
+@-webkit-keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+/* -------------------------------------------------------- */
+/* 幻燈片 */
+.element {
+  opacity: 0; /* 初始时设置元素透明度为 0 */
+  animation: fade-in 1s linear forwards; /* 使用 fade-in 动画，持续 1 秒，逐渐显示并保持最后状态 */
+  animation-delay: 0.5s; /* 设置动画延迟 2 秒启动 */
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0; /* 动画起始状态为透明 */
+  }
+  to {
+    opacity: 1; /* 动画结束状态为完全显示 */
+  }
+}

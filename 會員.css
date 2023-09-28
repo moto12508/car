@@ -1,0 +1,74 @@
+#member
+/* 會員 */
+{
+  border-radius: 4px;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 40px;
+  color: #d0d0d0;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+
+  text-align: center;
+  
+
+  transition: all .3s linear;
+
+  z-index: 2;
+  /* 防止被背景蓋掉 */
+}
+#member>h6{
+position: relative;
+z-index: 2;
+
+}
+#member::before{
+content: "";
+width: 0%;
+height: 100%;
+display: block;
+background-color: #ffffff30;
+position: absolute;
+top: 0;
+left: 0;
+transition: all .3s ease;
+
+border-radius: 2px;
+}
+#member:hover{
+color: #ffffff;
+font-size: 20px;
+
+}
+#member:hover::before{
+width: 100%;
+
+
+}
+/* ------------------------------------------------------------------------------------------ */
+
+
+
+@media screen and (max-width:659px){
+  #member{
+  position:relative;
+  right: 1px;
+  margin: 100px;
+        }       
+  }
+
+  @media screen and (max-width:1156px){
+    #member{
+    
+    top: 95px;
+    background-color: #000000;
+   
+          }       
+    }

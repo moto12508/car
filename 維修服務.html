@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./響應式導行列.css">
+    <!-- <link rel="stylesheet" href="./bootstrap-5.3.0-dist/bootstrap-5.3.0-dist/css/bootstrap.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./會員.css">
+    <link rel="stylesheet" href="./跳出表單.css">
+    <link rel="stylesheet" href="動畫.css">
+</head>
+<style>
+    /* 隱藏圖片的初始樣式 */
+    /* #image {
+      display: none;
+    } */
+/* ---------------------------------------- */
+/* 愛車文字 */
+    .tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+ @-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}  
+  /* ---------------------------------------- */
+/* 向右滑動 */
+.slide-right {
+  transition: transform 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+.slide-right:hover {
+  transform: translateX(100px);
+}
+
+.slide-right:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100px);
+  transition: transform 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+.slide-right:hover::after {
+  transform: translateX(0);
+}
+
+
+
+  </style> 
+
+<body class="bg-black">
+
+    <nav class="navber"  id="navbar">
+        <!-- <h1 class="logo text-warning">汽機車交流網</h1> -->
+        <!-- <img src="./logo.png" class="logo"> -->
+    
+        <div class="nav-links">
+            <ul>
+                <!-- <li class="active"><a href="#"></a></li> -->
+                <div><h6 id="member" class="vibrate-1"  onclick="document.getElementById('id01').style.display='block'">會員登入</h6></div> 
+                <li><a href="car.html"  class="text-decoration-none"><h5>回首頁</h5></a></li>
+                <!-- <li><a class="text-decoration-none" href="維修服務.html"><h5>維修服務</h5></a></li> -->
+                <!-- <li><a href="car.html"><h5 onclick="scrollToTarget()">關於我們</h5></a></li> -->
+                <li><h5>二輪專區</h5></li>
+                <li><h5>四輪專區</h5></li>
+                <li><h5>商城</h5></li> 
+                <li><h5>技術交流</h5></li> 
+                          
+            </ul>                      
+        </div>
+
+    </nav>    
+      
+      
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-white d-flex justify-content-center align-items-center tracking-in-expand" style="height: 200px;">請問您的愛車是?</h1>
+                <div class="row w-100">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center ">
+                        <img src="./車車的圖片/logo/icons8-car-100.png" alt="" class="slide-right"> 
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center align-items-center ">
+                        <img src="./車車的圖片/logo/icons8-motorcycle-100.png" alt="" class="slide-right">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- -----------------------------------------------------------------------------    -->        
+              
+    <!-- <script>
+        function toggleImage() {
+          var img = document.getElementById("image");
+          if (img.style.display === "none") {
+            img.style.display = "block";
+          } else {
+            img.style.display = "none";
+          }
+        }
+      </script>      -->
+          
+<!-- ----------------------------------------------------------------------------- -->
+
+<!-- <button onclick="document.getElementById('id01').style.display='block'">Login</button> -->
+
+
+<div id="id01" class="modal animate">
+    
+
+    <section>
+    <div class="login-box">
+
+      <span onclick="document.getElementById('id01').style.display='none'"
+      class="close" title="Close Modal">&times;</span>
+
+<div >
+        <form action="">
+            <h2 >Login</h2>
+        <div class="input-box">
+            <span class="icon"></span>
+            <input type="text"  required>
+            <label for="email1">email</label>
+        </div>
+        
+        <div class="input-box">
+            <span class="icon"></span>
+            <input type="password" required>
+            <label for="email2">passsword</label>
+        </div>
+        
+        <div class="remember-forgot">
+            <label for=""><input type="checkbox">Remeber me</label>
+        </div>
+        <button id="buttonLogin" >Login</button>
+        </form>
+</div>
+
+</div>
+</section>
+
+</div>
+<!-- 登入表單 -->
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="動畫.js"></script>
+<script src="js.js"></script>
+</html>

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./響應式導行列.css">
+    <!-- <link rel="stylesheet" href="./bootstrap-5.3.0-dist/bootstrap-5.3.0-dist/css/bootstrap.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./會員.css">
+    <link rel="stylesheet" href="./跳出表單.css">
+    <link rel="stylesheet" href="動畫.css">
+    
+  </head>
+<body class="bg-black">
+
+    <nav class="navber"  id="navbar">
+    <!-- <h1 class="logo text-warning">汽機車交流網</h1> -->
+    <!-- <img src="./logo.png" class="logo"> -->
+
+    <div class="nav-links">
+        <ul>
+            <!-- <li class="active"><a href="#"></a></li> -->
+            <div><h6 id="member" class="vibrate-1"  onclick="document.getElementById('id01').style.display='block'">會員登入</h6></div> 
+            <!-- <li><h5>首頁</h5></li> -->
+            <li><a class="text-decoration-none" href="維修服務.html"><h5>維修服務</h5></a></li>
+            <li><h5 onclick="scrollToTarget()">關於我們</h5></li>
+            <li><h5>二輪專區</h5></li>
+            <li><h5>四輪專區</h5></li>
+            <li><h5>商城</h5></li> 
+            <li><h5>技術交流</h5></li> 
+                      
+        </ul>
+
+        
+    </div>
+    <!-- <img src="./測試練習用/menu-btn.png" alt="" class="menu-hamburger"> -->
+<!------------------------------------------------------------------------------>
+<div class="menu-hamburger" onclick="myFunction(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div> 
+  <!-- 漢堡的 -->
+ <!----------------------------------------------------------------------------->
+    </nav> <!-- 為了把漢堡包著 -->
+   <!-- <img src="./landscape.jpg" class="img-fluid" alt=""> -->
+  <!-- --------------------------------------------------------------->
+  <!-- <br><br> -->
+  <div id="carouselExampleFade" class="carousel slide carousel-fade element">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        
+        <a href="https://forum.jorsindo.com/thread-2568698-1-1.html"><img src="./車車的圖片/裁切/1.png" class="d-block w-100" alt="..."></a>
+        <div class="carousel-caption d-none d-md-block  " >
+          <h4 class="bg-dark bg-success " style="--bs-bg-opacity:.5;">純正經典美式 2024 HONDA Shadow Phantom 北美登場</h4>
+          </div>                        
+      </div>
+      
+      <div class="carousel-item">
+        <a href="https://forum.jorsindo.com/thread-2568693-1-1.html"><img src="./車車的圖片/裁切/2.png" class="d-block w-100" alt="..."></a>
+        <div class="carousel-caption d-none d-md-block  " >
+          <h4 class="bg-dark bg-success " style="--bs-bg-opacity:.5;">1,015PS出力、V12插電新大牛！Lamborghini Revuelto強勢抵台
+          </h4>
+          </div>   
+      </div>
+      <div class="carousel-item">
+        <a href="https://forum.jorsindo.com/thread-2568526-1-1.html"><img src="./車車的圖片/裁切/3.png" class="d-block w-100" alt="..."></a>
+        <div class="carousel-caption d-none d-md-block  " >
+          <h4 class="bg-dark bg-success " style="--bs-bg-opacity:.5;">告別家族化臉孔！2024 Kawasaki ZX-6R如約登場，折合台幣35萬起
+          </h4>
+          </div>   
+      </div>
+    </div>
+    <button class="carousel-control-prev"  type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next"  type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- 幻燈片 -->
+  <!-- --------------------------------------------------------------->
+  <!-- --------------------------------------------------------------->
+ 
+<!-- ----------------------------------------------------------------------- -->
+<br><br>
+<h3 class="d-flex justify-content-center align-items-center text-light fw-bold element">最新影音</h3>
+
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active ">
+      <div class="container ">
+          <div class="row">
+            <div class="col-lg   ratio ratio-4x3 m-2">
+              <iframe   src="https://www.youtube.com/embed/_9BAJxjmRvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="col-lg   ratio ratio-4x3 m-2">
+              <iframe   src="https://www.youtube.com/embed/9ybJpKch054" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="col-lg   ratio ratio-4x3 m-2">
+              <iframe   src="https://www.youtube.com/embed/NE727I4wuY0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="col-lg   ratio ratio-4x3 m-2">
+              <iframe  src="https://www.youtube.com/embed/FZMa9FHPxLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <!-- <div class="col-lg ratio ratio-4x3 m-2">
+              <iframe  src="https://www.youtube.com/embed/T0ijTfFgvEg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div> -->
+          </div>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container ">
+          <div class="row ">
+            <div class="col-lg ratio ratio-4x3 m-2">
+              <iframe  src="https://www.youtube.com/embed/zwml3-p-r9I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="col-lg ratio ratio-4x3 m-2">
+              <iframe  src="https://www.youtube.com/embed/uPCy7cPfrb4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="col-lg ratio ratio-4x3 m-2">
+              <iframe  src="https://www.youtube.com/embed/iO_OcVqRfqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="col-lg ratio ratio-4x3 m-2">
+              <iframe  src="https://www.youtube.com/embed/E9tA1x8nf4I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container ">
+      <div class="row ">
+        <div class="col-lg ratio ratio-4x3 m-2">
+          <iframe  src="https://www.youtube.com/embed/PmvM6GdikO8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="col-lg ratio ratio-4x3 m-2">
+          <iframe  src="https://www.youtube.com/embed/HiYZMgRf--o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="col-lg ratio ratio-4x3 m-2">
+          <iframe  src="https://www.youtube.com/embed/4IL8nOxs7wI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="col-lg ratio ratio-4x3 m-2">
+          <iframe  src="https://www.youtube.com/embed/cgCeg7z0RYU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> 
+      <!-- <img src="./下載.jpg" class="d-block w-100" alt="..."> -->
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<br>
+<h6 class="d-flex justify-content-center align-items-center text-light">點我看更多</h6>
+<!-- ----------------------------------------------------------------------------- -->
+
+<!-- 最新車訊 -->
+<hr class="style-two"></hr>
+<div class="container-fluid  p-5">
+	<div class="row">
+		<div class="col-md-6 ">
+			<div class="row">
+        
+				<div class="col-md-5  ">
+					<img alt="Bootstrap 預覽圖片" src="./車車的圖片/221801jecmymzpaq41qf9f.jpg.thumb.jpg" class="img-fluid" />
+				</div>
+        
+				<div class="col-md-7 ">
+      <a href="https://forum.jorsindo.com/thread-2568715-1-1.html" class="text-decoration-none">
+
+          <h2>
+						德皮法骨，操駕樂趣滿滿！OPEL Grandland試駕報告
+					</h2>
+
+					<h5 class="link-light opacity-50">
+						OPEL品牌國內總代理歐吉汽車，繼去年導入都會小型跨界Mokka/Mokka-e之後，今年一大重點莫過於引進販售第二彈休旅產品Grandland了。這款中型SUV也在四月中旬正式抵台上市，提供GS Line(129.9萬元)、Business Elegance...
+					</h5>
+      </a>
+				</div>
+      
+			</div>
+    
+		</div>
+  
+		<div class="col-md-6">
+			<div class="row">
+				<div class="col-md-5">
+					<img alt="Bootstrap 預覽圖片" src="./車車的圖片/145513yvti5titvptklitw.jpg.thumb.jpg" class="img-fluid" />
+				</div>
+				<div class="col-md-7">
+          <a href="https://forum.jorsindo.com/thread-2568666-1-1.html" class="text-decoration-none">
+					<h2>
+						SYM CLBCU 深度測試！不僅只是女性用車! 蜂鳥雖小，五臟俱全
+					</h2>
+					<h5 class="link-light opacity-50">
+            SYM 在六月中發表了針對女性騎士設計的車款 CLBCU，憑藉著亮眼的外型與出色的配備隨即成為了目前討論度最高的話題。擁有跨界「CU」元素的蜂鳥，以仿生設計、人因設計以及貼心科技三大主軸來打造，SYM 重新詮釋了 Z ...
+					</h5>
+        </a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<hr class="style-two"></hr>
+
+<!-- 2--------------------------------------------------------------->
+<div class="container-fluid  p-5">
+	<div class="row">
+		<div class="col-md-6 ">
+			<div class="row">
+        
+				<div class="col-md-5  ">
+					<img alt="Bootstrap 預覽圖片" src="./車車的圖片/120831ukjbmb54b5jub5jq.jpg.thumb.jpg" class="img-fluid" />
+				</div>
+        
+				<div class="col-md-7 ">
+      <a href="https://forum.jorsindo.com/thread-2568738-1-1.html" class="text-decoration-none">
+
+          <h2>
+             北美專屬、限量900台！Toyota推GR Supra 45周年紀念版本
+					</h2>
+
+					<h5 class="link-light opacity-50">
+            最近北美Toyota針對旗下GR高性能家族，帶來2024新年式版本。其中在Supra車系部分，推出專屬45周年特仕版本(45th Anniversary Edition)。新車外觀塗裝致敬1993年問世的Mk4 Supra，結合硬體升級讓此車更富市場吸引力。...
+					</h5>
+      </a>
+				</div>
+      
+			</div>
+    
+		</div>
+  
+		<div class="col-md-6">
+			<div class="row">
+				<div class="col-md-5">
+					<img alt="Bootstrap 預覽圖片" src="./車車的圖片/095431htddd9vhdhmvh2ld.jpg.thumb.jpg" class="img-fluid" />
+				</div>
+				<div class="col-md-7">
+          <a href="https://forum.jorsindo.com/thread-2568734-1-1.html" class="text-decoration-none">
+					<h2>
+					
+            1290 Super Duke GT建議售價: 958,000 正式在台登場
+					</h2>
+					<h5 class="link-light opacity-50">
+            將熱血旅行與強悍跑格並駕齊驅1290 Super Duke GT建議售價: 958,000 正式在台登場即日起陸續交車 KTM總代理安東貿易正式發表1290 Super Duke GT，除了舒適和長途旅行之特性外，對於重式性能的族群，KTM打造出在旅行 ...
+					</h5>
+        </a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<h6 class="d-flex justify-content-center align-items-center text-light">點我看更多</h6>
+
+<hr class="style-two"></hr>
+
+
+
+<!-- ------------------------------------------------------------------------ -->
+<br><br id="target">
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+      
+			<h3 class="d-flex justify-content-center align-items-center text-warning fw-bold" >
+				關於我們
+			</h3>
+      
+			<div class="row  p-2">
+				<div class="col-lg-4 d-flex align-items-center">
+					<img alt="" src="./logo.png" class="d-block mx-auto  m-2 img-fluid target-section1 " />
+				</div>
+				<div class="col-lg-8  d-flex align-items-center">
+          <h5 class="p-3 m-3  text-white lh-lg target-section" >歡迎來到汽機車資訊網！我們是一個致力於提供全面且有價值的汽車和機車相關資訊的網站。無論你是一位汽車或機車愛好者、車主，或是對於這些交通工具有興趣的人，我們都將為你提供最新的資訊和有用的內容。
+            我們的網站提供廣泛的內容，包括車款詳細介紹、技術特點解說、保養和維修指南、新聞和評論等等。我們的目標是讓你能夠更了解各種汽車和機車的選擇，並提供你在使用和維護這些交通工具時的幫助。          
+            除了提供資訊外，我們也致力於建立一個活躍的使用者社群。你可以在我們的討論區或論壇與其他車主和愛好者交流，分享你的經驗和知識，或是尋求解決問題的建議。            
+            我們的團隊由汽車和機車專家組成，他們具有豐富的知識和經驗。我們努力確保我們的內容準確、可靠，並提供高品質的使用者體驗。            
+            感謝你選擇汽機車資訊網作為你獲取汽車和機車相關資訊的來源。如果你有任何疑問、建議或意見，請隨時與我們聯繫。祝你在我們的網站上度過愉快且富有收穫的時間！  </h5>
+            <!-- border border-light rounded-2 -->
+            
+          
+				</div>
+      </div>
+      
+        <h3 class="d-flex justify-content-center align-items-center text-light ">
+          服務據點
+        </h3>
+        
+        <iframe class="p-2 d-block mx-auto w-100"   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3634.85294263048!2d120.62446847597799!3d24.351614765428863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34690e038aa8ae6d%3A0xd8609a17632fca65!2zNDM35Y-w5Lit5biC5aSn55Sy5Y2A6IKy6Iux6LevMTLomZ8!5e0!3m2!1szh-TW!2stw!4v1687188709065!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</div>
+	</div>
+
+
+<br><br><br><br><br><br><br>
+
+<!-- ----------------------------------------------------------------------------- -->
+
+<!-- <button onclick="document.getElementById('id01').style.display='block'">Login</button> -->
+
+
+<div id="id01" class="modal animate">
+    
+
+    <section>
+    <div class="login-box">
+
+      <span onclick="document.getElementById('id01').style.display='none'"
+      class="close" title="Close Modal">&times;</span>
+
+<div >
+        <form action="">
+            <h2 >Login</h2>
+        <div class="input-box">
+            <span class="icon"></span>
+            <input type="text"  required>
+            <label for="email1">email</label>
+        </div>
+        
+        <div class="input-box">
+            <span class="icon"></span>
+            <input type="password" required>
+            <label for="email2">passsword</label>
+        </div>
+        
+        <div class="remember-forgot">
+            <label for=""><input type="checkbox">Remeber me</label>
+        </div>
+        <button id="buttonLogin" >Login</button>
+        </form>
+</div>
+
+</div>
+</section>
+
+</div>
+<!-- 登入表單 -->
+</body>
+
+    <script>
+//-----------------------------------------------------------------------       
+//         const menuHamburger = document.querySelector(".menu-hamburger")
+//         const navLinks = document.querySelector(".nav-links")
+ 
+//         menuHamburger.addEventListener('click',()=>{
+//         navLinks.classList.toggle('mobile-menu')
+//         })//導行列 漢堡
+// //-----------------------------------------------------------------------
+// function myFunction(x) {
+    
+//   x.classList.toggle("change");
+//   console.log("aa");
+// } //動態漢堡   
+// ------------------------------------------------------------------------
+// var prevScrollpos = window.pageYOffset;
+
+// window.onscroll = function() {
+//   var currentScrollPos = window.pageYOffset;
+  
+//   // 導航列隱藏功能
+//   if (prevScrollpos > currentScrollPos) {
+//     document.getElementById("navbar").style.top = "0";
+//     document.getElementById("navbar").style.transition = "top 0.3s ease, transform 0.3s ease";  
+//   } else {
+//     document.getElementById("navbar").style.top = "-200px";
+//     document.getElementById("navbar").style.transition = "top 0.3s ease, transform 0.3s ease";
+    
+//   }
+  
+//   // 變色功能
+//   if (currentScrollPos > 200) {
+//     var element = document.getElementById("navbar");
+//     element.style.backgroundColor = "rgba(0,0,0, 0.8)";
+  
+//   } else {
+//     var element = document.getElementById("navbar");
+//     element.style.backgroundColor = "rgba(0, 0, 0,0.5)";
+  
+//   }
+  
+//   prevScrollpos = currentScrollPos;
+// };
+
+// 是用id抓的
+// -------------------------------------------------------------
+// function scrollToTarget() {
+//       // 使用JavaScript中的scrollIntoView()方法滑動到目標元素
+//       const targetElement = document.getElementById('target');
+//       targetElement.scrollIntoView({ behavior: 'smooth' });
+//     }
+
+
+
+
+//按鈕滑到指定頁面
+
+
+// -------------------------------------------------------------
+
+// 輸入框效果
+    // const labels = document.querySelectorAll('label');
+    // // 全部
+
+    // labels.forEach(label => {
+    //     label.innerHTML = label.innerText
+    //         .split('')
+    //         .map((letter, i) =>
+    //             `<span style="transition-delay:${i * 100}ms">${letter}</span>`
+    //         )
+    //         .join('');
+    // });
+
+// -------------------------------------------------------------
+    
+// Get the modal
+
+// Get the modal
+// var modal1 = document.getElementById('id01');
+
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//   if (event.target == modal1) {
+//     modal1.style.display = "none";
+//   }
+// }
+
+
+// 會員登入外圍關閉
+
+// 沒用暫時放棄
+
+//---------------------------------------------------------------------------------------------------------
+
+
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="動畫.js"></script>
+<script src="js.js"></script>
+</html>
+

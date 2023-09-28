@@ -1,0 +1,185 @@
+*{
+margin: 0;
+padding: 0;
+text-decoration: none; /* 移除超連結的底線 */ 
+
+list-style: none;     
+/* 去除設定清單前方的圖示  */
+}     
+
+body{
+   
+    font-family:"Poppins";
+    /* 字形設定 */
+}
+/* header{
+    height:100vh; 
+    width: 100vw; 
+   
+    background-image: url(.//測試練習用/landscape.jpg);
+    background-size: cover; 
+} */
+.navber
+{
+    position: absolute;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+
+    position: fixed;
+    top: 0; /* Stay on top */
+    
+    transition: top 0.3s; 
+
+    z-index: 2;
+    /* 為了幻燈片 */
+
+    background-color: rgba(0, 0, 0,0.5);
+    
+}
+
+
+
+.navber h5{
+    color: rgb(255, 255, 255);
+}
+
+.navber h5:hover{
+    font-size: 30px;
+}
+
+/* .navber .logo {
+   width: 70px;
+  position: absolute;
+  left: 30px;
+  top: 10pxs; 
+
+}
+   */
+
+.navber .nav-links ul{
+    display: flex;
+}            
+
+.navber .nav-links ul li{
+    margin: 0 25px;
+    /* 文字間距 */
+}  
+
+.navber .nav-links ul li.active a{
+    /* 要貼著li */
+   color: red;
+   font-weight: 600;
+}   
+
+
+/* -------------------------------------------- */
+.navber .menu-hamburger{
+    display: none;
+    /* 為了縮小顯示 */
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    width: 35px; 
+    /* 漢堡 */
+    
+
+    /* display: inline-block; */
+    cursor: pointer;
+}
+    .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #ffffffad;
+    
+     
+    margin: 6px 0;
+    transition: 0.4s;
+
+    
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+
+    
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {opacity: 0;}
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+
+/* ------------------------------------------------------------ */
+
+@media screen and (max-width: 659px){
+    .navber{
+        padding: 0;
+        /* 補縮小視窗邊界 */
+    }
+
+    .navber .logo{
+        position: absolute;
+        top: 28px;
+        left: 50px;
+
+        
+    }
+
+    .navber .menu-hamburger{
+        display: block;
+    }
+
+    .nav-links{
+        top: 0;
+        left: 0;
+       position: absolute;
+       background-color: rgba(0, 0, 0, 0.211);
+        backdrop-filter: blur(8px);
+        /* 模糊 */
+
+       width: 100%;
+       height: 130vh;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-left:-100%;
+
+       
+
+    }
+    .nav-links.mobile-menu{
+        margin-left:0;
+        transition: all 0.8s ease;       
+     } 
+    
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 縮小後視窗 */
+        
+    }
+
+    .navber .nav-links ul li{
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+}
+
+
+/* 透明漸變 - color - transparent */
+/* 分隔線 */
+.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}

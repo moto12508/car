@@ -1,0 +1,182 @@
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+} */
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    width: 100%;
+    /* background: linear-gradient(45deg,#66bab6,#0093e9); */
+    
+}
+
+
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background: #000; 
+} */
+
+.login-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background:transparent;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+}
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid #fff;
+    /* 輸入框兩條線 */
+}
+.input-box label
+{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+     /* 滑鼠點到下層的區塊 */ 
+     /* transition: .5s;   */
+}
+
+  /* .input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px; 
+}  */
+
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;/* 透明的 */
+    border: none;
+    outline:none;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 35px 0 5px ;/* 限制最大輸入範圍 */
+}
+
+/* .input-box .icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 57px;
+} 圖標*/
+
+.remember-forgot{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input{
+    margin-right: 3px;
+}
+.remember-forgot a{
+    color: #fff;
+    text-decoration: none; /* 文字樣式 */
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+    /* 替網頁文字加上底線 */
+}
+
+ #buttonLogin{
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    /* border 主要用途是設定物件的邊框線，
+     outline 是設定物件的外框線 */
+   border-radius:40px;
+   /* 圓角 */
+   cursor: pointer;
+   font-size: 1em;
+   color: #000;
+   font-weight: 500;
+   /* 文字粗細 */
+}
+
+@media (max-width:576px)
+{
+    .login-box{
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+
+.input-box label span{
+    display: inline-block;
+    font-size: 20px;
+    transition: 0.5s cubic-bezier(0.68,-0.55,0.265,1.55);
+    
+
+}
+
+.input-box input:focus + label span,
+.input-box input:valid + label span
+{
+    transform: translateY(-35px);
+}
+
+/* -------------------------------------------- */
+
+.modal {
+  display: none; /* Hidden by default */
+}
+
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
